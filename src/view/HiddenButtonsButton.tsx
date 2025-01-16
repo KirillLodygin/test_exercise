@@ -42,8 +42,8 @@ export const HiddenButtonsButton = ({
 }: HiddenButtonsButtonType) => {
   const { hiddenChipsetsButton } = defaultState;
   const buttons = hiddenChipsetsButtons.map((item) => (
-    <ChipsetWrap>
-      <ChipsetButton key={item} buttonName={item} />
+    <ChipsetWrap key={item}>
+      <ChipsetButton buttonName={item} />
     </ChipsetWrap>
   ));
 
